@@ -9,27 +9,9 @@
 
     <title>Kraft Singles</title>
 
-    <script>
-        let slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-        let i;
-        const slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 3000); // Change image every 3 seconds (3000 milliseconds)
-        }
-    </script>
-
-
-
+    <script src="scripts.js" async></script>
+    <!-- TESTING -->
 
 </head>
 <body>
@@ -51,35 +33,46 @@
         </section>
 
         <section class="info-holder">
-            <p>Heinz, named after Henry J. Heinz, began as a small-scale food packing venture in Sharpsburg, Pennsylvania, in 1869, where Henry and a partner marketed horseradish. After facing bankruptcy, Henry, along with his brother and cousin, established F & J Heinz, producing the iconic Heinz Tomato Ketchup and other products. He later restructured it as the H. J. Heinz Company in 1888. The famous "57 varieties" slogan emerged in 1896, chosen by Henry almost randomly but for its appealing sound and psychological impact.</p>    
+            <p>Heinz is named after Henry J. Heinz, we began as a small-scale food packing venture in Sharpsburg, Pennsylvania, in 1869, where Henry and a partner marketed horseradish. After facing bankruptcy, Henry, along with his brother and cousin, established F & J Heinz, producing the iconic Heinz Tomato Ketchup and other products. He later restructured it as the H. J. Heinz Company in 1888. The famous "57 varieties" slogan emerged in 1896, chosen by Henry almost randomly but for its appealing sound and psychological impact.</p>    
         </section>
+
+        <section class="benefits">
+            <h2>Employee benefits</h2>
+            <ul>
+                <li>Competitive Salaries</li>
+                <li>Life Insurance</li>
+                <li>Health Insurance</li>
+                <li>Dental Insurance</li>
+                <li>Working Flexibility</li>
+                <li>Work from Home</li>
+            </ul>
+        </section>
+
+        <!-- carousel -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/employee-1.png" alt="Image 1">
+              <div class="text">"Wow this company is so great!!"</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/employee-2.png" alt="Image 2">
+              <div class="text">"I love working here because it's so fun."</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/employee-3.png" alt="Image 3">
+              <div class="text">"Hahhahahahahahahahahaha."</div>
+            </div>
+        </div>
 
         <section class="info-holder">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+            <p>Contact us and join our family today! Or else.</p>
         </section>
-
-        <section>
             
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <img src="image1.jpg" style="width:100%">
-                </div>
-                
-                <div class="mySlides fade">
-                  <img src="image2.jpg" style="width:100%">
-                </div>
-                
-                <div class="mySlides fade">
-                  <img src="image3.jpg" style="width:100%">
-                </div>
 
-              </div>
-
-        </section>
 
     </div>
-
-
 
     <footer>
         <p>&copy; 2023 Kraft Heinz. All rights reserved.</p>
