@@ -43,12 +43,14 @@ footer {
     
     background-color: #FAF9F6;
 }
-section#main-img{
+section#main-img, #about-main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 }
+
+
 section#main-img img[src="img/kraft_cheese.png"]{
     max-width: 50%;
     padding-left: 25%;
@@ -57,9 +59,6 @@ section.info-holder{
     max-width: 50%;
     padding-left: 25%;
 }
-
-
-
 
 table {
     width: 100%;
@@ -85,4 +84,51 @@ th {
 }
 td.text-right {
     text-align: right;
+}
+
+
+
+
+.benefits {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.slideshow-container {
+    max-width: 100%;
+    /*
+    position: relative;
+    */
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    /*
+    position: absolute;
+    */
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.mySlides img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+}
+
+
+.fade {
+    opacity: 1;
 }
