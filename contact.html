@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css stylesheets -->
+    <link rel="stylesheet" href="./src/normalize.css">
+    <link rel="stylesheet" href="./src/style2.css">
+    <title>Contact Us - Kraft Singles</title>
+</head>
+<body>
+
+    <nav>
+        <div class="header-item">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="header-item">
+            <a href="aboutus.html">About Us</a>
+        </div>
+        <div class="header-item">
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="header-item">
+            <a href="products.html">Products</a>
+        </div>
+    </nav>
+
+    <!-- navigation bar -->
+    <header id="header"></header>
+    <!-- main content -->
+    <div class="main-content">
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                If You have any Troubles please contact us in the below contact form.
+            </p>
+
+            <form action="submit-contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="info-holder">
+            <h3>Contact Information</h3>
+            <p>
+                If you prefer to contact us directly, you can reach us using the following methods:
+            </p>
+            <ul>
+                <li>Email: info@kraftsingles.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 123 Main St, City, State, ZIP</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Kraft Heinz. All rights reserved.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+
+
+</body>
+</html>
