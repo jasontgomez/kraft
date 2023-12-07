@@ -5,13 +5,7 @@ body {
     background-color: #000080;
 }
 
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #555;
-    padding: 10px;
-}
+/*
 
 nav a {
     color: white;
@@ -24,6 +18,35 @@ nav a {
 }
 .header-item:hover{
     background-color: red;
+}
+
+*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+a.active {
+    background-color: #555;
+}
+
+a:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 
@@ -41,8 +64,13 @@ footer {
 
 h3 {
     background-color: #000080;
-    color: #FAF9F6;
     font-size: 40px;
+}
+
+h4 {
+    color: #FAF9F6;
+    font-size: 50px;
+    text-align: center;
 }
 
 
@@ -55,7 +83,7 @@ h3 {
 
     margin-left: 20%;
     margin-right: 20%;
-    
+    min-height: 100vh;
     background-color: #FAF9F6;
 }
 section#main-img, #about-main{
